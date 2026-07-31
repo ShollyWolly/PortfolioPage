@@ -3,7 +3,7 @@ window.APP = window.APP || { data: {}, i18n: {} };
 APP.i18n.de = {
   meta: {
     htmlLang: "de",
-    title: "Alexander Hilberer - BI & Data Science Consultant"
+    title: "Alexander Hilberer, BI & Data Science Consultant"
   },
   nav: {
     brand: "A. Hilberer",
@@ -18,14 +18,14 @@ APP.i18n.de = {
   hero: {
     eyebrow: "Hallo, ich bin",
     role: "BI & Data Science Consultant",
-    tagline: "Ich baue daten- und KI-getriebene Systeme - vom On-Prem-Lakehouse bis zu produktionsreifem MLOps.",
+    tagline: "Ich baue daten- und KI-getriebene Systeme, On-Prem und in der Cloud.",
     ctaProjects: "Projekte ansehen",
     ctaContact: "Kontakt aufnehmen",
     ctaResume: "Lebenslauf herunterladen"
   },
   about: {
     heading: "Über mich",
-    intro: "Ich entwickle skalierbare Datenpipelines, implementiere MLOps-Workflows und konzipiere LLM- sowie agentenbasierte KI-Lösungen. Erfahren im Umgang mit Cloud-Plattformen wie Azure und GCP sowie Open-Source-Tools - mit Leidenschaft für praxisnahe Datenlösungen und stetiges Lernen.",
+    intro: "Ich konzipiere skalierbare Datenpipelines, entwickle MLOps-Workflows und baue LLM- sowie agentenbasierte KI-Lösungen, über On-Prem-Infrastruktur und Cloud-Plattformen wie Azure und GCP hinweg, inklusive der dazugehörigen Open-Source-Tools. Mir ist wichtig, praxisnahe und produktionsreife Datenlösungen zu bauen, und ich lerne gerne dazu.",
     educationHeading: "Ausbildung",
     educationBachelor: "B.Sc. Wirtschaftsinformatik - Hochschule Trier",
     educationMaster: "M.Sc. Artificial Intelligence & Data Science - Hochschule Trier",
@@ -38,22 +38,22 @@ APP.i18n.de = {
     "previsionz-consultant": {
       role: "BI & Data Science Consultant",
       location: "Saarbrücken, Deutschland",
-      description: "Konzeption und Entwicklung von LLM- und agentenbasierten KI-Lösungen, Aufbau skalierbarer Datenpipelines und Implementierung von MLOps-Workflows für Cloud-Plattformen wie Azure/Fabric und GCP."
+      description: "Konzeption und Entwicklung von LLM- und agentenbasierten KI-Lösungen sowie Aufbau skalierbarer Datenpipelines und MLOps-Workflows für Cloud-Plattformen wie Azure/Fabric und GCP."
     },
     "previsionz-werkstudent": {
       role: "Werkstudent Data Science",
       location: "Saarbrücken, Deutschland",
-      description: "Evaluierung von Microsoft Fabric und Google Cloud Platform sowie Unterstützung bei Datenarchitektur- und MLOps-Themen über mehrere Cloud-Anbieter hinweg."
+      description: "Evaluierung von Microsoft Fabric und Google Cloud Platform, mit Unterstützung bei Datenarchitektur- und MLOps-Themen über mehrere Cloud-Anbieter hinweg."
     },
     "neodigital-werkstudent": {
       role: "Werkstudent IT",
       location: "Neunkirchen, Deutschland",
-      description: "Unterstützung bei Entwicklungsprojekten mit Schwerpunkt Frontend-Softwareentwicklung."
+      description: "Mitarbeit an Entwicklungsprojekten mit Schwerpunkt Frontend-Entwicklung."
     },
     "neodigital-praktikum-thesis": {
       role: "Praktikum IT-Entwicklung & Bachelorarbeit",
       location: "Neunkirchen, Deutschland",
-      description: "Praktikum im Bereich Telematik-Backend (NoSQL-Datenmodell, Cassandra-Cluster mit Docker, Zugriff via Java/Spring Boot) sowie anschließende Bachelorarbeit zur Schätzung von Ruß-Emissionen aus Fahrzeugsensordaten mittels linearer Modelle."
+      description: "Praktikum im Bereich Telematik-Backend (NoSQL-Datenmodell, Cassandra-Cluster via Docker, Zugriff über Java/Spring Boot), gefolgt von der Bachelorarbeit zur Schätzung von Ruß-Emissionen aus Fahrzeugsensordaten mittels linearer Modelle."
     }
   },
   certifications: {
@@ -79,6 +79,6 @@ APP.i18n.de = {
   },
   contact: {
     heading: "Kontakt",
-    intro: "Offen für Projekte rund um Datenplattformen, BI und angewandte KI."
+    intro: "Hast du Lust auf einen Austausch? Meld dich gerne bei mir."
   }
 };

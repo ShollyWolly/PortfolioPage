@@ -3,7 +3,7 @@ window.APP = window.APP || { data: {}, i18n: {} };
 APP.i18n.en = {
   meta: {
     htmlLang: "en",
-    title: "Alexander Hilberer - BI & Data Science Consultant"
+    title: "Alexander Hilberer, BI & Data Science Consultant"
   },
   nav: {
     brand: "A. Hilberer",
@@ -18,14 +18,14 @@ APP.i18n.en = {
   hero: {
     eyebrow: "Hi, I'm",
     role: "BI & Data Science Consultant",
-    tagline: "I build data- and AI-driven systems - from on-prem lakehouses to production-grade MLOps.",
+    tagline: "I build data- and AI-driven systems, on-prem and in the cloud.",
     ctaProjects: "View projects",
     ctaContact: "Get in touch",
     ctaResume: "Download resume"
   },
   about: {
     heading: "About",
-    intro: "I build scalable data pipelines, implement MLOps workflows, and design LLM- and agent-based AI solutions. Experienced with cloud platforms like Azure and GCP as well as open-source tools - passionate about practical data solutions and continuous learning.",
+    intro: "I design scalable data pipelines, build MLOps workflows, and develop LLM- and agent-based AI solutions, across on-prem infrastructure and cloud platforms like Azure and GCP, plus the open-source tools around them. I care about practical, production-ready data solutions and enjoy picking up new tools along the way.",
     educationHeading: "Education",
     educationBachelor: "B.Sc. Business Informatics - Hochschule Trier",
     educationMaster: "M.Sc. Artificial Intelligence & Data Science - Hochschule Trier",
@@ -38,22 +38,22 @@ APP.i18n.en = {
     "previsionz-consultant": {
       role: "BI & Data Science Consultant",
       location: "Saarbrücken, Germany",
-      description: "Designing and building LLM- and agent-based AI solutions, scalable data pipelines, and MLOps workflows across cloud platforms like Azure/Fabric and GCP."
+      description: "Design and build LLM- and agent-based AI solutions, scalable data pipelines, and MLOps workflows across cloud platforms such as Azure/Fabric and GCP."
     },
     "previsionz-werkstudent": {
       role: "Working Student, Data Science",
       location: "Saarbrücken, Germany",
-      description: "Evaluated Microsoft Fabric and Google Cloud Platform, and supported data architecture and cross-cloud MLOps initiatives."
+      description: "Evaluated Microsoft Fabric and Google Cloud Platform, supporting data architecture and cross-cloud MLOps initiatives."
     },
     "neodigital-werkstudent": {
       role: "Working Student, IT",
       location: "Neunkirchen, Germany",
-      description: "Supported development projects with a focus on front-end software engineering."
+      description: "Contributed to development projects with a focus on front-end engineering."
     },
     "neodigital-praktikum-thesis": {
       role: "IT Development Internship & Bachelor's Thesis",
       location: "Neunkirchen, Germany",
-      description: "Internship in telematics backend development (NoSQL data modeling, a Dockerized Cassandra cluster, Java/Spring Boot access) followed by a bachelor's thesis estimating vehicle soot emissions from sensor data using linear models."
+      description: "Internship in telematics backend development (NoSQL data modeling, a Dockerized Cassandra cluster, accessed via Java/Spring Boot), followed by a bachelor's thesis estimating vehicle soot emissions from sensor data using linear models."
     }
   },
   certifications: {
@@ -79,6 +79,6 @@ APP.i18n.en = {
   },
   contact: {
     heading: "Contact",
-    intro: "Open to projects around data platforms, BI, and applied AI."
+    intro: "Want to connect? Reach out, I'd love to hear from you."
   }
 };
