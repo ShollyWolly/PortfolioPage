@@ -18,11 +18,6 @@ assets/resume/           # your resume PDFs (not included, see below)
 
 Content and layout are separated: `data/` and `i18n/` hold everything editable, `assets/js` only renders it.
 
-## TODO before publishing
-
-- **Resume PDFs**: `data/profile.js` points `resume.de`/`resume.en` at `assets/resume/Alexander_Hilberer_Lebenslauf.pdf` and `..._Resume.pdf`. Drop your actual PDFs at those paths (create the `assets/resume/` folder) - the hero "download resume" button links there directly, no rendering logic needed.
-- **Resume PDFs still missing** - the download button links to a path that doesn't exist yet until you add the file (see above).
-
 ## Add a project
 
 Edit `data/projects.js`, add an object with `id`, `title`, `link`, `environment` ("onprem"/"azure"/"gcp" - drives the small icon under the title, see `assets/js/icons.js`), `tech[]`, `order`. Then add a matching `projects.<id>.description` entry to **both** `i18n/de.js` and `i18n/en.js`. No HTML/CSS changes needed.
