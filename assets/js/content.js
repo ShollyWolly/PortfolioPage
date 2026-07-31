@@ -208,11 +208,15 @@ window.APP = window.APP || { data: {}, i18n: {} };
       row.appendChild(code);
 
       var name = document.createElement("span");
+      name.className = "retired-list__name";
       name.textContent = cert.name;
       row.appendChild(name);
 
-      row.appendChild(buildIssuerIcon(cert));
-      row.appendChild(buildVerifyLink(cert, "retired-list__verify-link", t("certifications.verifyLabel")));
+      var meta = document.createElement("span");
+      meta.className = "retired-list__meta";
+      meta.appendChild(buildIssuerIcon(cert));
+      meta.appendChild(buildVerifyLink(cert, "retired-list__verify-link", t("certifications.verifyLabel")));
+      row.appendChild(meta);
 
       mount.appendChild(row);
     });

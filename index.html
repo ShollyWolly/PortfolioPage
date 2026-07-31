@@ -19,8 +19,11 @@
 
   <header class="nav">
     <div class="container nav__inner">
-      <span class="nav__brand">&gt; <span data-bind="profile.name">Alexander Hilberer</span></span>
-      <nav class="nav__links">
+      <a class="nav__brand" href="index.html">&gt; <span data-bind="profile.name">Alexander Hilberer</span></a>
+      <button id="nav-toggle" class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-key="nav.menuToggleAria" data-i18n-attr="aria-label">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav__links">
         <a href="#about" data-i18n-key="nav.about">Über mich</a>
         <a href="#experience" data-i18n-key="nav.experience">Erfahrung</a>
         <a href="#certifications" data-i18n-key="nav.certifications">Zertifizierungen</a>

@@ -8,6 +8,7 @@ APP.i18n.en = {
   nav: {
     brand: "A. Hilberer",
     langToggleAria: "Select language",
+    menuToggleAria: "Open menu",
     about: "About",
     experience: "Experience",
     certifications: "Certifications",

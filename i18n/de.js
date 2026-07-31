@@ -8,6 +8,7 @@ APP.i18n.de = {
   nav: {
     brand: "A. Hilberer",
     langToggleAria: "Sprache wählen",
+    menuToggleAria: "Menü öffnen",
     about: "Über mich",
     experience: "Erfahrung",
     certifications: "Zertifizierungen",

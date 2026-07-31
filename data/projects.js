@@ -9,7 +9,7 @@ APP.data.projects = [
     tech: [
       "Apache Airflow", "Apache Spark", "Apache Iceberg", "Garage",
       "Apache Polaris", "Trino", "OpenLDAP", "Apache Ranger",
-      "Cube Core", "Apache Superset", "PostgreSQL", "Streamlit", "Traefik"
+      "Cube Core", "Apache Superset", "PostgreSQL", "Streamlit", "Traefik", "Docker"
     ],
     order: 1
   },
@@ -20,7 +20,7 @@ APP.data.projects = [
     environment: "onprem",
     tech: [
       "LibreChat", "Apache Superset", "OpenLDAP", "Cube Core",
-      "PostgreSQL", "Garage", "MCP"
+      "PostgreSQL", "Garage", "MCP", "Docker"
     ],
     order: 2
   },
@@ -31,8 +31,8 @@ APP.data.projects = [
     environment: "onprem",
     tech: [
       "Apache Airflow", "MLflow", "PostgreSQL", "scikit-learn",
-      "XGBoost", "Flask", "Streamlit", "Gunicorn", "JupyterLab",
-      "Evidently", "SHAP", "Docker Compose"
+      "XGBoost", "Flask", "Streamlit", "JupyterLab",
+      "Evidently", "SHAP", "Docker"
     ],
     order: 3
   }
