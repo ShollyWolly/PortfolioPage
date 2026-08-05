@@ -65,7 +65,8 @@ APP.i18n.de = {
     heading: "Projekte",
     linkLabel: "Repository ansehen",
     environments: {
-      onprem: "On-Premise"
+      onprem: "On-Premise",
+      azure: "Azure"
     },
     "onprem-data-lakehouse": {
       description: "Unternehmenstaugliche On-Prem-Datenplattform mit Medallion-Architektur (Bronze/Silber/Gold) auf Iceberg-Tabellen."
@@ -75,6 +76,9 @@ APP.i18n.de = {
     },
     "onprem-mlops": {
       description: "Vollständige MLOps-Plattform für binäre Kreditrisiko-Klassifikation: Training, Deployment, Monitoring, Drift-Erkennung und Modell-Governance."
+    },
+    "fabric-agentic-analytics": {
+      description: "Per Terraform bereitgestellte Microsoft-Fabric-Analytics-Plattform für den Retail-Bereich mit Medallion-Architektur (Bronze/Silber/Gold), Power-BI-Reporting und einem Natural-Language-Data-Agent sowie optionaler Open-WebUI-/MCP-Chat-Ebene."
     }
   },
   contact: {

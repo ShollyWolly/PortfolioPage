@@ -65,7 +65,8 @@ APP.i18n.en = {
     heading: "Projects",
     linkLabel: "View repository",
     environments: {
-      onprem: "On-Prem"
+      onprem: "On-Prem",
+      azure: "Azure"
     },
     "onprem-data-lakehouse": {
       description: "Enterprise-grade on-prem data platform with a medallion architecture (bronze/silver/gold) built on Iceberg tables."
@@ -75,6 +76,9 @@ APP.i18n.en = {
     },
     "onprem-mlops": {
       description: "Full MLOps platform for binary credit-risk classification: training, deployment, monitoring, drift detection, and model governance."
+    },
+    "fabric-agentic-analytics": {
+      description: "Terraform-deployed Microsoft Fabric retail analytics platform with a medallion architecture (bronze/silver/gold), Power BI reporting, and a natural-language Data Agent, plus an optional Open WebUI/MCP chat layer."
     }
   },
   contact: {

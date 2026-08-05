@@ -35,5 +35,16 @@ APP.data.projects = [
       "Evidently", "SHAP", "Docker"
     ],
     order: 3
+  },
+  {
+    id: "fabric-agentic-analytics",
+    title: "Fabric Agentic Analytics",
+    link: "https://github.com/ShollyWolly/Fabric-Agentic-Analytics",
+    environment: "azure",
+    tech: [
+      "Microsoft Fabric", "Terraform", "Azure ADLS Gen2", "fabric-cicd",
+      "Power BI", "Open WebUI", "MCP", "Docker"
+    ],
+    order: 4
   }
 ];
