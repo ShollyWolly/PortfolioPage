@@ -70,5 +70,15 @@ APP.data.certifications = [
     status: "active",
     verifyUrl: "https://learn.microsoft.com/api/credentials/share/en-us/AlexanderHilberer-2441/D4807E4A1B4BAE79?sharingId=8D0C852D1B22410B",
     order: 7
+  },
+  {
+    id: "ai-300",
+    code: "AI-300",
+    name: "Machine Learning Operations Engineer Associate",
+    issuer: "Microsoft",
+    issuerIcon: "azure",
+    status: "active",
+    verifyUrl: "https://learn.microsoft.com/api/credentials/share/en-us/AlexanderHilberer-2441/A19EA22DDBDC4965?sharingId=8D0C852D1B22410B",
+    order: 8
   }
 ];
