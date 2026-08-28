@@ -34,7 +34,7 @@
 
     toggle.addEventListener("click", toggleMenu);
     links.addEventListener("click", function (event) {
-      if (event.target.closest("a, [data-lang]")) closeMenu();
+      if (event.target.closest("a")) closeMenu();
     });
     document.addEventListener("keydown", function (event) {
       if (event.key !== "Escape" || toggle.getAttribute("aria-expanded") !== "true") return;
