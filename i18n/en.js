@@ -9,6 +9,7 @@ APP.i18n.en = {
     brand: "Alexander Hilberer",
     langToggleAria: "Select language",
     menuToggleAria: "Open menu",
+    menuCloseAria: "Close menu",
     about: "About",
     projects: "Projects",
     experience: "Experience",

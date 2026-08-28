@@ -9,6 +9,7 @@ APP.i18n.de = {
     brand: "Alexander Hilberer",
     langToggleAria: "Sprache wählen",
     menuToggleAria: "Menü öffnen",
+    menuCloseAria: "Menü schließen",
     about: "Über mich",
     projects: "Projekte",
     experience: "Erfahrung",
