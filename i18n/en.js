@@ -3,34 +3,34 @@ window.APP = window.APP || { data: {}, i18n: {} };
 APP.i18n.en = {
   meta: {
     htmlLang: "en",
-    title: "Alexander Hilberer, BI & Data Science Consultant"
+    title: "Alexander Hilberer | Data & AI Systems Engineer"
   },
   nav: {
-    brand: "A. Hilberer",
+    brand: "Alexander Hilberer",
     langToggleAria: "Select language",
     menuToggleAria: "Open menu",
     about: "About",
-    experience: "Experience",
-    certifications: "Certifications",
     projects: "Projects",
+    experience: "Experience",
+    credentials: "Credentials",
     contact: "Contact"
   },
   hero: {
-    eyebrow: "Hi, I'm",
-    role: "BI & Data Science Consultant",
-    tagline: "I build data- and AI-driven systems, on-prem and in the cloud.",
-    ctaProjects: "View projects",
+    role: "Data & AI Systems Engineer",
+    tagline: "I explore data and AI systems that can be operated, secured, and evolved with confidence.",
+    ctaProjects: "Explore projects",
     ctaContact: "Get in touch",
-    ctaResume: "Download resume"
+    ctaResume: "Download résumé"
   },
   about: {
     heading: "About",
-    intro: "I design scalable data pipelines, build MLOps workflows, and develop LLM- and agent-based AI solutions, across on-prem infrastructure and cloud platforms like Azure and GCP, plus the open-source tools around them. I care about practical, production-ready data solutions and enjoy picking up new tools along the way.",
+    intro: "I am interested in data platforms, MLOps, and AI systems, from data foundations and model lifecycles to controlled interfaces for LLMs. I am especially drawn to the decisions that connect architecture, operations, and governance.",
+    principleOne: "Design systems with operation and evolution in mind.",
+    principleTwo: "Treat governance, access control, and traceability as part of the design.",
+    principleThree: "Use cloud and open-source tools pragmatically.",
     educationHeading: "Education",
-    educationBachelor: "B.Sc. Business Informatics - Hochschule Trier",
-    educationMaster: "M.Sc. Artificial Intelligence & Data Science - Hochschule Trier",
-    currentRoleLabel: "Current role",
-    currentRole: "BI & Data Science Consultant"
+    educationBachelor: "B.Sc. Business Informatics · Trier University of Applied Sciences",
+    educationMaster: "M.Sc. Artificial Intelligence & Data Science · Trier University of Applied Sciences"
   },
   experience: {
     heading: "Experience",
@@ -38,51 +38,74 @@ APP.i18n.en = {
     "previsionz-consultant": {
       role: "BI & Data Science Consultant",
       location: "Saarbrücken, Germany",
-      description: "Design and build LLM- and agent-based AI solutions, scalable data pipelines, and MLOps workflows across cloud platforms such as Azure/Fabric and GCP."
+      description: "Design and development of LLM-based and agentic AI solutions. Building MLOps workflows for deployment, monitoring, and automation, alongside data pipelines and ETL/ELT processes for analytics and ML workloads. Working with Azure/Fabric, GCP, and open-source tools including Apache Spark, MinIO, and Airflow."
     },
     "previsionz-werkstudent": {
       role: "Working Student, Data Science",
       location: "Saarbrücken, Germany",
-      description: "Evaluated Microsoft Fabric and Google Cloud Platform, supporting data architecture and cross-cloud MLOps initiatives."
+      description: "Analysed the data capabilities of Google Cloud Platform and Microsoft Fabric, supporting the assessment of relevant services for the central technology portfolio. Contributed to data architecture and development work, and evaluated MLOps requirements across AWS SageMaker, Azure Machine Learning, and Google Vertex AI."
     },
-    "neodigital-werkstudent": {
-      role: "Working Student, IT",
+    "neodigital-bachelor-thesis-werkstudent": {
+      role: "Bachelor's Thesis & Working Student, IT",
       location: "Neunkirchen, Germany",
-      description: "Contributed to development projects with a focus on front-end engineering."
+      description: "Developed and evaluated linear models to estimate vehicle fuel consumption from simple sensor data. Then contributed to software development projects with a focus on front-end engineering."
     },
-    "neodigital-praktikum-thesis": {
-      role: "IT Development Internship & Bachelor's Thesis",
+    "neodigital-internship-telematics": {
+      role: "IT Development Internship · Telematics",
       location: "Neunkirchen, Germany",
-      description: "Internship in telematics backend development (NoSQL data modeling, a Dockerized Cassandra cluster, accessed via Java/Spring Boot), followed by a bachelor's thesis estimating vehicle soot emissions from sensor data using linear models."
+      description: "Gained hands-on backend development experience: selected a NoSQL database, built a Cassandra cluster with Docker, modelled acceleration data, and connected it through Java with Spring Boot."
     }
   },
   certifications: {
-    heading: "Certifications",
-    retiredHeading: "Retired Certifications",
+    heading: "Credentials",
+    intro: "Current certifications complement my practical work.",
+    supportingHeading: "Additional certifications",
+    retiredHeading: "Retired certifications",
     verifyLabel: "Verify"
   },
   projects: {
     heading: "Projects",
-    linkLabel: "View repository",
+    intro: "Personal projects give me space to think through data and AI systems hands-on, from architecture through to operation. They show how I connect complex components into understandable, operable systems.",
+    linkLabel: "Open repository",
     environments: {
-      onprem: "On-Prem",
+      onprem: "Self-hosted",
       azure: "Azure"
     },
     "onprem-data-lakehouse": {
-      description: "Enterprise-grade on-prem data platform with a medallion architecture (bronze/silver/gold) built on Iceberg tables."
+      description: "In this project, I build a single-host lakehouse that carries generated retail data through Spark transformations and Iceberg tables to governed analytics.",
+      highlights: {
+        identity: "Connected OpenLDAP and Ranger UserSync for identities, roles, and governed Trino access.",
+        orchestration: "Set up Airflow with schedulers, Celery workers, and Spark for orchestrated, quality-checked transformations.",
+        analytics: "Combined Trino, Cube, and Superset into governed query, semantic, and dashboard layers."
+      }
     },
     "onprem-agentic-bi": {
-      description: "Self-contained, governed BI system with an agentic chat interface, role-based data masking via a semantic layer, and MCP services for controlled SQL/dashboard access."
+      description: "Here, I connect a Pagila warehouse, semantic layer, dashboards, and LibreChat agents into a local agentic BI demonstration for governed data access.",
+      highlights: {
+        access: "Connected OpenLDAP as the directory source with Authentik for LibreChat OIDC and Cube MCP OAuth.",
+        governance: "Cube MCP verifies tokens and groups, mints short-lived Cube JWTs, and returns role-based masked PII.",
+        tools: "Integrated MCP services for governed semantic queries and dashboard inspection."
+      }
     },
     "onprem-mlops": {
-      description: "Full MLOps platform for binary credit-risk classification: training, deployment, monitoring, drift detection, and model governance."
+      description: "With this platform, I map the complete MLOps lifecycle for credit-risk classification, from data generation and feature engineering through to serving, monitoring, and challenger comparison.",
+      highlights: {
+        lifecycle: "Connected MLflow experiments, model registry, promotion, and Flask serving through Airflow DAGs.",
+        monitoring: "Turned classification metrics, KS-based feature drift, and SHAP explanations into repeatable workflows.",
+        delivery: "Implemented retraining, quality gates, and five-fold challenger comparisons with an auditable decision trail."
+      }
     },
     "fabric-agentic-analytics": {
-      description: "Terraform-deployed Microsoft Fabric retail analytics platform with a medallion architecture (bronze/silver/gold), Power BI reporting, and a natural-language Data Agent, plus an optional Open WebUI/MCP chat layer."
+      description: "In this project, I automate the delivery of a Microsoft Fabric platform for financial transactions, with a medallion pipeline, semantic model, Power BI, and a Data Agent.",
+      highlights: {
+        infrastructure: "Made Azure infrastructure, Fabric artefacts, and deployment scripts reproducible with Terraform, Fabric CLI, and fabric-cicd.",
+        analytics: "Connected a bronze–silver–gold pipeline, DirectQuery semantic model, and Power BI dashboard into one analytics path.",
+        integration: "Extended it with a Data Agent, MCP-backed chat layer, and independently deployable Eventhouse/KQL real-time module."
+      }
     }
   },
   contact: {
     heading: "Contact",
-    intro: "Want to connect? Reach out, I'd love to hear from you."
+    intro: "Would you like to exchange ideas about data, MLOps, or AI systems? I would be glad to hear from you."
   }
 };

@@ -20,7 +20,9 @@ Content and layout are separated: `data/` and `i18n/` hold everything editable, 
 
 ## Add a project
 
-Edit `data/projects.js`, add an object with `id`, `title`, `link`, `environment` ("onprem"/"azure"/"gcp" - drives the small icon under the title, see `assets/js/icons.js`), `tech[]`, `order`. Then add a matching `projects.<id>.description` entry to **both** `i18n/de.js` and `i18n/en.js`. No HTML/CSS changes needed.
+Edit `data/projects.js`, add an object with `id`, `title`, `link`, `environment` ("onprem"/"azure"/"gcp" - drives the small icon under the title, see `assets/js/icons.js`), `highlights[]`, `tech[]`, and `order`. `highlights` contains the three keys used for the project's short technical points.
+
+Then add matching `projects.<id>.description` and `projects.<id>.highlights.<key>` entries to **both** `i18n/de.js` and `i18n/en.js`. Every project uses the same layout, so no HTML/CSS changes are needed.
 
 ## Add a job to Experience
 
@@ -28,7 +30,7 @@ Edit `data/experience.js`, add `{ id, company, startDate: "YYYY-MM", endDate: "Y
 
 ## Add a certification
 
-Edit `data/certifications.js`, add `{ id, code, name, issuer, issuerIcon: "azure" | "gcp", status: "active" | "retired", verifyUrl, order }`.
+Edit `data/certifications.js`, add `{ id, code, name, issuer, issuerIcon: "azure" | "gcp", status: "active" | "retired", group: "primary" | "supporting", verifyUrl, order }`. Active supporting credentials render in a collapsed secondary section; retired credentials render in their own collapsed, visually muted section.
 
 ## Add a language
 

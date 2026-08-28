@@ -16,17 +16,17 @@ APP.data.experience = [
     order: 2
   },
   {
-    id: "neodigital-werkstudent",
+    id: "neodigital-bachelor-thesis-werkstudent",
     company: "Neodigital Versicherung AG",
-    startDate: "2022-04",
+    startDate: "2021-12",
     endDate: "2022-12",
     order: 3
   },
   {
-    id: "neodigital-praktikum-thesis",
+    id: "neodigital-internship-telematics",
     company: "Neodigital Versicherung AG",
     startDate: "2021-08",
-    endDate: "2022-03",
+    endDate: "2021-11",
     order: 4
   }
 ];

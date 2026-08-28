@@ -17,15 +17,15 @@ window.APP = window.APP || { data: {}, i18n: {} };
 
     projects.forEach(function (project) {
       var card = document.createElement("article");
-      card.className = "card project-card";
+      card.className = "project-entry";
 
       var title = document.createElement("h3");
-      title.className = "project-card__title";
+      title.className = "project-entry__title";
       title.textContent = project.title;
       card.appendChild(title);
 
       var environment = document.createElement("span");
-      environment.className = "project-card__environment";
+      environment.className = "project-entry__environment";
       var environmentIcon = document.createElement("span");
       environmentIcon.className = "issuer-icon";
       environmentIcon.innerHTML = APP.icons.getIcon(project.environment);
@@ -36,9 +36,18 @@ window.APP = window.APP || { data: {}, i18n: {} };
       card.appendChild(environment);
 
       var description = document.createElement("p");
-      description.className = "project-card__description";
+      description.className = "project-entry__description";
       description.textContent = t("projects." + project.id + ".description");
       card.appendChild(description);
+
+      var highlights = document.createElement("ul");
+      highlights.className = "project-entry__highlights";
+      project.highlights.forEach(function (highlight) {
+        var item = document.createElement("li");
+        item.textContent = t("projects." + project.id + ".highlights." + highlight);
+        highlights.appendChild(item);
+      });
+      card.appendChild(highlights);
 
       var tagList = document.createElement("ul");
       tagList.className = "tag-list";
@@ -51,7 +60,7 @@ window.APP = window.APP || { data: {}, i18n: {} };
       card.appendChild(tagList);
 
       var link = document.createElement("a");
-      link.className = "project-card__link";
+      link.className = "project-entry__link";
       link.href = project.link;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
@@ -146,15 +155,12 @@ window.APP = window.APP || { data: {}, i18n: {} };
     return link;
   }
 
-  function renderActiveCertifications(certifications) {
-    var mount = document.getElementById("certifications-grid");
+  function renderCertificationCards(mount, certifications) {
     if (!mount) return;
     var t = APP.i18n.t;
     mount.innerHTML = "";
 
-    certifications.filter(function (cert) {
-      return cert.status === "active";
-    }).forEach(function (cert) {
+    certifications.forEach(function (cert) {
       var card = document.createElement("div");
       card.className = "card cert-card";
 
@@ -186,46 +192,29 @@ window.APP = window.APP || { data: {}, i18n: {} };
     });
   }
 
-  function renderRetiredCertifications(certifications) {
-    var mount = document.getElementById("certifications-retired-list");
-    var section = document.getElementById("certifications-retired");
-    if (!mount || !section) return;
-    var t = APP.i18n.t;
-    mount.innerHTML = "";
-
+  function renderCertifications() {
+    var certifications = APP.data.certifications.slice().sort(byOrder);
+    var active = certifications.filter(function (cert) {
+      return cert.status === "active";
+    });
+    var primary = active.filter(function (cert) {
+      return cert.group !== "supporting";
+    });
+    var supporting = active.filter(function (cert) {
+      return cert.group === "supporting";
+    });
     var retired = certifications.filter(function (cert) {
       return cert.status === "retired";
     });
+    var more = document.getElementById("credentials-more");
+    var retiredSection = document.getElementById("credentials-retired");
 
-    section.style.display = retired.length ? "" : "none";
+    renderCertificationCards(document.getElementById("certifications-grid"), primary);
+    renderCertificationCards(document.getElementById("supporting-certifications-grid"), supporting);
+    renderCertificationCards(document.getElementById("retired-certifications-grid"), retired);
 
-    retired.forEach(function (cert) {
-      var row = document.createElement("li");
-
-      var code = document.createElement("span");
-      code.className = "retired-list__code";
-      code.textContent = cert.code;
-      row.appendChild(code);
-
-      var name = document.createElement("span");
-      name.className = "retired-list__name";
-      name.textContent = cert.name;
-      row.appendChild(name);
-
-      var meta = document.createElement("span");
-      meta.className = "retired-list__meta";
-      meta.appendChild(buildIssuerIcon(cert));
-      meta.appendChild(buildVerifyLink(cert, "retired-list__verify-link", t("certifications.verifyLabel")));
-      row.appendChild(meta);
-
-      mount.appendChild(row);
-    });
-  }
-
-  function renderCertifications() {
-    var certifications = APP.data.certifications.slice().sort(byOrder);
-    renderActiveCertifications(certifications);
-    renderRetiredCertifications(certifications);
+    if (more) more.style.display = supporting.length ? "" : "none";
+    if (retiredSection) retiredSection.style.display = retired.length ? "" : "none";
   }
 
   function renderProfileBindings() {

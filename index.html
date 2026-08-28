@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexander Hilberer, BI &amp; Data Science Consultant</title>
+  <title>Alexander Hilberer, Data &amp; AI Systems Engineer</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,15 +19,15 @@
 
   <header class="nav">
     <div class="container nav__inner">
-      <a class="nav__brand" href="index.html">&gt; <span data-bind="profile.name">Alexander Hilberer</span></a>
+      <a class="nav__brand" href="index.html"><span data-bind="profile.name">Alexander Hilberer</span></a>
       <button id="nav-toggle" class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-key="nav.menuToggleAria" data-i18n-attr="aria-label">
         <span></span><span></span><span></span>
       </button>
       <nav id="nav-links" class="nav__links">
         <a href="#about" data-i18n-key="nav.about">Über mich</a>
-        <a href="#experience" data-i18n-key="nav.experience">Erfahrung</a>
-        <a href="#certifications" data-i18n-key="nav.certifications">Zertifizierungen</a>
         <a href="#projects" data-i18n-key="nav.projects">Projekte</a>
+        <a href="#experience" data-i18n-key="nav.experience">Erfahrung</a>
+        <a href="#credentials" data-i18n-key="nav.credentials">Zertifizierungen</a>
         <a href="#contact" data-i18n-key="nav.contact">Kontakt</a>
         <div id="lang-toggle" class="lang-toggle" data-i18n-key="nav.langToggleAria" data-i18n-attr="aria-label"></div>
       </nav>
@@ -38,11 +38,10 @@
 
     <section class="hero">
       <div class="container">
-        <p class="hero__eyebrow" data-i18n-key="hero.eyebrow">Hallo, ich bin</p>
         <h1 class="hero__name" data-bind="profile.name">Alexander Hilberer</h1>
-        <p class="hero__role" data-i18n-key="hero.role">BI &amp; Data Science Consultant</p>
+        <p class="hero__role" data-i18n-key="hero.role">Data &amp; AI Systems Engineer</p>
         <p class="hero__tagline" data-i18n-key="hero.tagline">
-          Ich baue daten- und KI-getriebene Systeme, On-Prem und in der Cloud.
+          Ich beschäftige mich mit Daten- und KI-Systemen, die sich nachvollziehbar betreiben, absichern und weiterentwickeln lassen.
         </p>
         <div class="hero__actions">
           <a class="button button--primary" href="#projects" data-i18n-key="hero.ctaProjects">Projekte ansehen</a>
@@ -56,14 +55,17 @@
       <div class="container">
         <h2 class="section-heading" data-i18n-key="about.heading">Über mich</h2>
         <div class="about-grid">
-          <p class="about__intro" data-i18n-key="about.intro">
-            Ich konzipiere skalierbare Datenpipelines, entwickle MLOps-Workflows und baue LLM- sowie agentenbasierte KI-Lösungen, über On-Prem-Infrastruktur und Cloud-Plattformen wie Azure und GCP hinweg, inklusive der dazugehörigen Open-Source-Tools. Mir ist wichtig, praxisnahe und produktionsreife Datenlösungen zu bauen, und ich lerne gerne dazu.
-          </p>
-          <dl class="about__list card">
-            <div>
-              <dt data-i18n-key="about.currentRoleLabel">Aktuelle Rolle</dt>
-              <dd data-i18n-key="about.currentRole">BI &amp; Data Science Consultant</dd>
-            </div>
+          <div>
+            <p class="about__intro" data-i18n-key="about.intro">
+              Ich beschäftige mich mit Datenplattformen, MLOps und KI-Systemen – von der Datenbasis über Modelllebenszyklen bis hin zu kontrollierten Schnittstellen für LLMs.
+            </p>
+            <ul class="principles-list">
+              <li data-i18n-key="about.principleOne">Systeme so entwerfen, dass Betrieb und Weiterentwicklung mitgedacht sind.</li>
+              <li data-i18n-key="about.principleTwo">Governance, Zugriffsrechte und Nachvollziehbarkeit als Teil des Designs behandeln.</li>
+              <li data-i18n-key="about.principleThree">Cloud- und Open-Source-Werkzeuge pragmatisch einsetzen.</li>
+            </ul>
+          </div>
+          <dl class="about__list">
             <div>
               <dt data-i18n-key="about.educationHeading">Ausbildung</dt>
               <dd class="about__degree">
@@ -96,6 +98,14 @@
       </div>
     </section>
 
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-heading" data-i18n-key="projects.heading">Projekte</h2>
+        <p class="section-intro" data-i18n-key="projects.intro">Eigene Projekte geben mir Raum, Daten- und KI-Systeme von der Architektur bis zum Betrieb praktisch zu durchdenken.</p>
+        <div id="projects-grid" class="projects-grid"></div>
+      </div>
+    </section>
+
     <section id="experience">
       <div class="container">
         <h2 class="section-heading" data-i18n-key="experience.heading">Erfahrung</h2>
@@ -103,22 +113,19 @@
       </div>
     </section>
 
-    <section id="certifications">
+    <section id="credentials">
       <div class="container">
         <h2 class="section-heading" data-i18n-key="certifications.heading">Zertifizierungen</h2>
+        <p class="section-intro" data-i18n-key="certifications.intro">Aktuelle Zertifizierungen ergänzen meine praktische Arbeit.</p>
         <div id="certifications-grid" class="certifications-grid"></div>
-
-        <div id="certifications-retired">
-          <h3 class="subsection-heading" data-i18n-key="certifications.retiredHeading">Zurückgezogene Zertifizierungen</h3>
-          <ul id="certifications-retired-list" class="retired-list"></ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <h2 class="section-heading" data-i18n-key="projects.heading">Projekte</h2>
-        <div id="projects-grid" class="projects-grid"></div>
+        <details id="credentials-more" class="credentials-more">
+          <summary data-i18n-key="certifications.supportingHeading">Weitere Zertifizierungen</summary>
+          <div id="supporting-certifications-grid" class="certifications-grid certifications-grid--supporting"></div>
+        </details>
+        <details id="credentials-retired" class="credentials-more">
+          <summary data-i18n-key="certifications.retiredHeading">Zurückgezogene Zertifizierungen</summary>
+          <div id="retired-certifications-grid" class="certifications-grid certifications-grid--retired"></div>
+        </details>
       </div>
     </section>
 

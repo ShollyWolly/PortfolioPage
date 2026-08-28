@@ -6,7 +6,7 @@
 }
 
 section {
-  padding: 64px 0;
+  padding: 88px 0;
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -15,28 +15,31 @@ section:last-of-type {
 }
 
 .section-heading {
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-accent);
-  margin-bottom: 1.5em;
+  font-size: 1.6rem;
+  letter-spacing: -0.03em;
+  color: var(--color-text);
+  margin-bottom: 0.65em;
 }
 
 .section-heading::before {
-  content: "// ";
-  color: var(--color-text-muted);
+  margin-right: 0.45em;
+  color: var(--color-accent);
+  content: ">";
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  vertical-align: 0.08em;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 48px;
 }
 
 .certifications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 12px;
 }
 
 .about-grid {
@@ -48,10 +51,14 @@ section:last-of-type {
 
 @media (max-width: 640px) {
   section {
-    padding: 48px 0;
+    padding: 64px 0;
   }
 
   .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 }

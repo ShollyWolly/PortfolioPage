@@ -8,8 +8,9 @@ APP.data.certifications = [
     issuer: "Microsoft",
     issuerIcon: "azure",
     status: "retired",
+    group: "supporting",
     verifyUrl: "https://learn.microsoft.com/api/credentials/share/en-us/AlexanderHilberer-2441/1A0821235FD8A139?sharingId=8D0C852D1B22410B",
-    order: 1
+    order: 7
   },
   {
     id: "ai-102",
@@ -18,8 +19,9 @@ APP.data.certifications = [
     issuer: "Microsoft",
     issuerIcon: "azure",
     status: "retired",
+    group: "supporting",
     verifyUrl: "https://learn.microsoft.com/api/credentials/share/en-us/AlexanderHilberer-2441/4E1216CDB5801C86?sharingId=8D0C852D1B22410B",
-    order: 2
+    order: 8
   },
   {
     id: "dp-600",
@@ -28,8 +30,9 @@ APP.data.certifications = [
     issuer: "Microsoft",
     issuerIcon: "azure",
     status: "active",
+    group: "primary",
     verifyUrl: "https://learn.microsoft.com/api/credentials/share/en-us/AlexanderHilberer-2441/16DF041E74DE312C?sharingId=8D0C852D1B22410B",
-    order: 3
+    order: 4
   },
   {
     id: "dp-700",
@@ -38,8 +41,9 @@ APP.data.certifications = [
     issuer: "Microsoft",
     issuerIcon: "azure",
     status: "active",
+    group: "primary",
     verifyUrl: "https://learn.microsoft.com/api/credentials/share/en-us/AlexanderHilberer-2441/C9DFB5E4DCE09CF5?sharingId=8D0C852D1B22410B",
-    order: 4
+    order: 3
   },
   {
     id: "gcp-mle",
@@ -48,8 +52,9 @@ APP.data.certifications = [
     issuer: "Google",
     issuerIcon: "gcp",
     status: "active",
+    group: "primary",
     verifyUrl: "https://www.credly.com/badges/492e1e80-9730-467b-92cd-de78c492dc94/linked_in_profile",
-    order: 5
+    order: 1
   },
   {
     id: "az-104",
@@ -58,8 +63,9 @@ APP.data.certifications = [
     issuer: "Microsoft",
     issuerIcon: "azure",
     status: "active",
+    group: "supporting",
     verifyUrl: "https://learn.microsoft.com/api/credentials/share/en-us/AlexanderHilberer-2441/12FE7CB9BC75200D?sharingId=8D0C852D1B22410B",
-    order: 6
+    order: 5
   },
   {
     id: "az-900",
@@ -68,8 +74,9 @@ APP.data.certifications = [
     issuer: "Microsoft",
     issuerIcon: "azure",
     status: "active",
+    group: "supporting",
     verifyUrl: "https://learn.microsoft.com/api/credentials/share/en-us/AlexanderHilberer-2441/D4807E4A1B4BAE79?sharingId=8D0C852D1B22410B",
-    order: 7
+    order: 6
   },
   {
     id: "ai-300",
@@ -78,7 +85,8 @@ APP.data.certifications = [
     issuer: "Microsoft",
     issuerIcon: "azure",
     status: "active",
+    group: "primary",
     verifyUrl: "https://learn.microsoft.com/api/credentials/share/en-us/AlexanderHilberer-2441/A19EA22DDBDC4965?sharingId=8D0C852D1B22410B",
-    order: 8
+    order: 2
   }
 ];
