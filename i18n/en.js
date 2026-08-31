@@ -39,12 +39,12 @@ APP.i18n.en = {
     "previsionz-consultant": {
       role: "BI & Data Science Consultant",
       location: "Saarbrücken, Germany",
-      description: "Design and development of LLM-based and agentic AI solutions. Building MLOps workflows for deployment, monitoring, and automation, alongside data pipelines and ETL/ELT processes for analytics and ML workloads. Working with Azure/Fabric, GCP, and open-source tools including Apache Spark, MinIO, and Airflow."
+      description: "Designed an agentic AI solution to simulate and analyse sales data. Developed an end-to-end MLOps workflow in Azure Machine Learning for customer churn classification. Implemented a recommendation system for banking products using hybrid collaborative-filtering methods. Supported the migration from Azure Synapse Analytics to Microsoft Fabric."
     },
     "previsionz-werkstudent": {
       role: "Working Student, Data Science",
       location: "Saarbrücken, Germany",
-      description: "Analysed the data capabilities of Google Cloud Platform and Microsoft Fabric, supporting the assessment of relevant services for the central technology portfolio. Contributed to data architecture and development work, and evaluated MLOps requirements across AWS SageMaker, Azure Machine Learning, and Google Vertex AI."
+      description: "Analysed and compared MLOps lifecycles across Azure, Google Cloud Platform, and AWS. Designed and implemented an on-premises lakehouse architecture. Evaluated and integrated Microsoft Fabric into the central technology portfolio."
     },
     "neodigital-bachelor-thesis-werkstudent": {
       role: "Bachelor's Thesis & Working Student, IT",
@@ -54,7 +54,7 @@ APP.i18n.en = {
     "neodigital-internship-telematics": {
       role: "IT Development Internship · Telematics",
       location: "Neunkirchen, Germany",
-      description: "Gained hands-on backend development experience: selected a NoSQL database, built a Cassandra cluster with Docker, modelled acceleration data, and connected it through Java with Spring Boot."
+      description: "Evaluated suitable NoSQL database solutions. Set up a Cassandra cluster across multiple Docker containers. Developed a data model for storing vehicle speed data. Integrated Cassandra with the existing backend architecture."
     }
   },
   certifications: {

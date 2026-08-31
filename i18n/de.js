@@ -39,12 +39,12 @@ APP.i18n.de = {
     "previsionz-consultant": {
       role: "BI & Data Science Consultant",
       location: "Saarbrücken, Deutschland",
-      description: "Entwurf und Entwicklung von LLM-basierten sowie agentischen KI-Lösungen. Aufbau von MLOps-Workflows für Bereitstellung, Monitoring und Automatisierung sowie von Datenpipelines und ETL/ELT-Prozessen für Analytics- und ML-Workloads. Arbeit mit Azure/Fabric, GCP und Open-Source-Werkzeugen wie Apache Spark, MinIO und Airflow."
+      description: "Konzeption einer agentischen KI-Lösung zur Simulation und Analyse von Vertriebsdaten. Entwicklung eines End-to-End-MLOps-Workflows in Azure Machine Learning zur Klassifikation von Kundenabwanderung. Implementierung eines Empfehlungssystems für Bankprodukte mittels hybrider kollaborativer Filterverfahren. Unterstützung bei der Migration von Azure Synapse Analytics zu Microsoft Fabric."
     },
     "previsionz-werkstudent": {
       role: "Werkstudent Data Science",
       location: "Saarbrücken, Deutschland",
-      description: "Analyse der Datenfähigkeiten von Google Cloud Platform und Microsoft Fabric sowie Unterstützung bei der Einordnung relevanter Services in das zentrale Technologieportfolio. Mitarbeit an Datenarchitekturen, Entwicklungsaufgaben und der Bewertung von MLOps-Anforderungen über AWS SageMaker, Azure Machine Learning und Google Vertex AI hinweg."
+      description: "Analyse und Vergleich von MLOps-Lebenszyklen in Azure, Google Cloud Platform und AWS. Konzeption und Implementierung einer On-Premises-Lakehouse-Architektur. Bewertung und Integration von Microsoft Fabric in das zentrale Unternehmensportfolio."
     },
     "neodigital-bachelor-thesis-werkstudent": {
       role: "Bachelorarbeit & Werkstudent IT",
@@ -54,7 +54,7 @@ APP.i18n.de = {
     "neodigital-internship-telematics": {
       role: "Praktikum IT-Entwicklung · Telematik",
       location: "Neunkirchen, Deutschland",
-      description: "Einblicke in die Backend-Entwicklung: Auswahl eines NoSQL-Datenbanksystems, Aufbau eines Cassandra-Clusters mit Docker, Modellierung von Beschleunigungsdaten und Anbindung über Java mit Spring Boot."
+      description: "Evaluierung geeigneter NoSQL-Datenbanklösungen. Aufbau eines Cassandra-Clusters mit mehreren Docker-Containern. Entwicklung eines Datenmodells zur Speicherung von Geschwindigkeitsdaten. Anbindung von Cassandra an die bestehende Backend-Landschaft."
     }
   },
   certifications: {
