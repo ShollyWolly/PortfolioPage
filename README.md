@@ -1,6 +1,6 @@
 # Portfolio Site
 
-Static resume/portfolio page for Alexander Hilberer. Plain HTML/CSS/JS, no build step - works opened directly (`index.html` via `file://`) and on GitHub Pages.
+Static resume/portfolio page for Alexander Hilberer. Plain HTML/CSS/JS with a small Node.js build step that pre-renders the German and English pages for GitHub Pages.
 
 ## Structure
 
@@ -9,14 +9,17 @@ index.html              # single page shell, sections, data-i18n-key/data-bind h
 assets/css/             # base -> theme -> layout -> components (loaded in that order)
 assets/js/
   i18n.js               # language switching, DOM text swap, persistence
-  content.js             # renders projects/certifications/profile data into the DOM
+  content.js             # hydrates project/certification/profile data in the browser
   main.js                # init orchestrator
 data/                    # content: profile, experience, projects, certifications
 i18n/                    # translation dictionaries (de.js default, en.js)
 assets/resume/           # your resume PDFs (not included, see below)
+scripts/build.mjs        # renders / and /en/ into dist/
+scripts/check-build.mjs  # verifies the generated pages
+.github/workflows/       # builds and deploys the Pages artifact
 ```
 
-Content and layout are separated: `data/` and `i18n/` hold everything editable, `assets/js` only renders it.
+Content and layout are separated: `data/` and `i18n/` hold everything editable. The build renders those values into HTML so crawlers receive the complete page without running JavaScript; the browser scripts keep language switching and navigation interactive.
 
 ## Add a project
 
@@ -34,12 +37,32 @@ Edit `data/certifications.js`, add `{ id, code, name, issuer, issuerIcon: "azure
 
 ## Add a language
 
-1. Copy `i18n/en.js` to `i18n/<lang>.js`, translate all values, keep every key path identical.
-2. In `assets/js/i18n.js`, add the lang code to `SUPPORTED_LANGS`.
-3. Add `<script src="i18n/<lang>.js" defer></script>` to `index.html` (before `assets/js/i18n.js`).
+The current build deliberately publishes German at `/` and English at `/en/`. Adding another language also requires extending `scripts/build.mjs` with its output path and SEO alternate link.
 
 The language toggle button renders itself from `SUPPORTED_LANGS` - no markup changes needed there.
 
+## Build locally
+
+Use Node.js 22 or later:
+
+```bash
+npm ci
+npm run build
+npm run check
+```
+
+The deployable output is written to `dist/` and intentionally ignored by Git. Serve that directory locally to inspect the generated HTML; do not publish the repository root.
+
 ## Deploy
 
-Push to GitHub, enable Pages on the default branch root (Settings -> Pages). No build step, no `.nojekyll` needed.
+In GitHub, set **Settings → Pages → Source** to **GitHub Actions**. Pushing to `main` runs the workflow, validates the static pages, and deploys the `dist/` artifact. Pull requests run the build and validation but do not deploy.
+
+Keep the custom domain configured in GitHub Pages settings. The action deploys the generated artifact, so the legacy root `CNAME` file is not used for the deployment.
+
+## SEO output
+
+The build produces:
+
+- complete German content at `https://hilberer.dev/` and English content at `https://hilberer.dev/en/`;
+- language-specific titles, descriptions, canonical URLs, Open Graph metadata, hreflang links, and Person/WebSite JSON-LD;
+- `robots.txt` and `sitemap.xml`.

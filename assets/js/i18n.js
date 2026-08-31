@@ -29,6 +29,8 @@ window.APP = window.APP || { data: {}, i18n: {} };
     } catch (e) {
       /* localStorage unavailable (e.g. privacy mode) - fall through to default */
     }
+    var documentLang = document.documentElement.lang;
+    if (SUPPORTED_LANGS.indexOf(documentLang) !== -1) return documentLang;
     return DEFAULT_LANG;
   }
 

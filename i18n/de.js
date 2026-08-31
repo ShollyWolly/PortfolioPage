@@ -3,7 +3,8 @@ window.APP = window.APP || { data: {}, i18n: {} };
 APP.i18n.de = {
   meta: {
     htmlLang: "de",
-    title: "Alexander Hilberer | Data & AI Systems Engineer"
+    title: "Alexander Hilberer | Data & AI Systems Engineer",
+    description: "Portfolio von Alexander Hilberer, Data & AI Systems Engineer aus dem Saarland, Deutschland. Data Platforms, MLOps, Google Cloud, Azure und Open-Source-Systeme."
   },
   nav: {
     brand: "Alexander Hilberer",
@@ -18,6 +19,7 @@ APP.i18n.de = {
   },
   hero: {
     role: "Data & AI Systems Engineer",
+    location: "Saarland, Deutschland",
     tagline: "Ich beschäftige mich mit Daten- und KI-Systemen, die sich nachvollziehbar betreiben, absichern und weiterentwickeln lassen.",
     ctaProjects: "Projekte entdecken",
     ctaContact: "Kontakt aufnehmen",
