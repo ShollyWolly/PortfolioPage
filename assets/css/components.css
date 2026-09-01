@@ -192,6 +192,12 @@
   font-size: 1.04rem;
 }
 
+.about__personal {
+  max-width: 680px;
+  margin-top: 18px;
+  color: var(--color-text-muted);
+}
+
 .principles-list {
   display: grid;
   gap: 10px;
@@ -369,7 +375,7 @@
   position: absolute;
   left: 0;
   color: var(--color-accent);
-  content: "–";
+  content: ">";
 }
 
 .tag-list {

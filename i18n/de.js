@@ -20,17 +20,18 @@ APP.i18n.de = {
   hero: {
     role: "Data & AI Systems Engineer",
     location: "Saarland, Deutschland",
-    tagline: "Ich beschäftige mich mit Daten- und KI-Systemen, die sich nachvollziehbar betreiben, absichern und weiterentwickeln lassen.",
+    tagline: "Ich entwickle Daten- und KI-Systeme mit Fokus auf nachvollziehbare Datenflüsse, klare Zugriffsgrenzen und langfristige Weiterentwicklung.",
     ctaProjects: "Projekte entdecken",
     ctaContact: "Kontakt aufnehmen",
     ctaResume: "Lebenslauf herunterladen"
   },
   about: {
     heading: "Über mich",
-    intro: "Mich interessieren Datenplattformen, MLOps und KI-Systeme – von der Datenbasis über Modelllebenszyklen bis hin zu kontrollierten Schnittstellen für LLMs. Besonders spannend finde ich die Entscheidungen zwischen Architektur, Betrieb und Governance.",
-    principleOne: "Systeme so entwerfen, dass Betrieb und Weiterentwicklung mitgedacht sind.",
-    principleTwo: "Governance, Zugriffsrechte und Nachvollziehbarkeit als Teil des Designs behandeln.",
-    principleThree: "Cloud- und Open-Source-Werkzeuge pragmatisch einsetzen.",
+    intro: "Ich entwickle Daten- und KI-Lösungen an der Schnittstelle von Architektur, Betrieb und Governance. Entscheidend ist für mich nicht nur, dass ein System funktioniert, sondern dass Datenflüsse, Zugriffe und Weiterentwicklung von Anfang an nachvollziehbar sind.",
+    personal: "Neue Technologien erschließe ich praktisch, in eigenen Referenzumgebungen und beim Self-Hosting. So prüfe ich nicht nur, was ein Werkzeug verspricht, sondern auch, wie es sich integriert und wo seine Grenzen liegen. Beim Schwimmen und Wandern finde ich den Ausgleich dazu.",
+    principleOne: "Datenflüsse und Betriebswege so gestalten, dass Änderungen und Fehler sichtbar bleiben.",
+    principleTwo: "Zugriffe und Governance als Architekturentscheidungen behandeln.",
+    principleThree: "Neue Technologien dort einsetzen, wo sie eine konkrete Anforderung besser lösen.",
     educationHeading: "Ausbildung",
     educationBachelor: "B.Sc. Wirtschaftsinformatik · Hochschule Trier",
     educationMaster: "M.Sc. Artificial Intelligence & Data Science · Hochschule Trier"
@@ -68,47 +69,47 @@ APP.i18n.de = {
   },
   projects: {
     heading: "Projekte",
-    intro: "Eigene Projekte geben mir Raum, Daten- und KI-Systeme von der Architektur bis zum Betrieb praktisch zu durchdenken. Sie zeigen, wie ich komplexe Komponenten zu nachvollziehbaren und betreibbaren Gesamtsystemen verbinde.",
+    intro: "Die Projekte zeigen, wie ich enterprise-orientierte Daten- und KI-Architekturen von der Integration bis zum Betrieb umsetze. Im Fokus stehen klare Datenflüsse, kontrollierte Zugriffe, wiederholbare Bereitstellung und das praktische Erproben neuer Technologien.",
     linkLabel: "Repository öffnen",
     environments: {
       onprem: "Self-hosted",
       azure: "Azure"
     },
     "onprem-data-lakehouse": {
-      description: "In diesem Projekt baue ich ein Single-Host-Lakehouse auf, das generierte Retaildaten über Spark-Transformationen und Iceberg-Tabellen bis zu kontrollierten Analytics führt.",
+      description: "Enterprise-orientiertes, selbst gehostetes Single-Host-Lakehouse für generierte Retaildaten. Sie verbindet Batch-Verarbeitung, offene Tabellenformate, rollenbasierte Datenzugriffe und Analytics in einer lokalen Umgebung.",
       highlights: {
-        identity: "OpenLDAP und Ranger UserSync für Identitäten, Rollen und den geregelten Trino-Zugriff verbunden.",
-        orchestration: "Airflow mit Scheduler, Celery-Workern und Spark für orchestrierte und qualitätsgeprüfte Transformationen eingerichtet.",
-        analytics: "Trino, Cube und Superset als kontrollierte Abfrage-, Semantic- und Dashboard-Schicht kombiniert."
+        identity: "LDAP-Rollen und Ranger-Policies für kontrollierten Trino-Zugriff modelliert.",
+        orchestration: "Bronze-, Silver- und Gold-Transformationen mit Airflow und Spark orchestriert, inklusive Data-Quality-Checks.",
+        analytics: "Kuratierten Datenzugriff über Trino, Cube und Superset bereitgestellt."
       }
     },
     "onprem-agentic-bi": {
-      description: "Hier verbinde ich ein Pagila-Warehouse, Semantic Layer, Dashboards und LibreChat-Agenten zu einer lokalen Agentic-BI-Demonstration für kontrollierte Datenabfragen.",
+      description: "Lokale Agentic-BI-Umgebung für kontrollierte Abfragen auf modellierten Daten. Sie zeigt, wie Chat-Agenten über eine semantische Schicht auf modellierte Daten zugreifen und welche Identitäts- und Berechtigungsschritte dafür nötig sind.",
       highlights: {
-        access: "OpenLDAP als Verzeichnisquelle mit Authentik für LibreChat-OIDC und Cube-MCP-OAuth verbunden.",
-        governance: "Cube-MCP prüft Token und Gruppen, erstellt kurzlebige Cube-JWTs und liefert rollenbasiert maskierte PII.",
-        tools: "MCP-Dienste für kontrollierte Semantic Queries und Dashboard-Inspektion integriert."
+        access: "LDAP, Authentik OIDC/OAuth und einen eigenen Cube-MCP-Gateway verbunden.",
+        governance: "MCP-Abfragen an die angemeldete Identität gebunden und für diesen Pfad rollenbasierte PII-Maskierung umgesetzt.",
+        tools: "Agentenabfragen und Dashboard-Zugriff bewusst getrennt, das Dashboard nutzt eine gemeinsame Service-Identität."
       }
     },
     "onprem-mlops": {
-      description: "Mit dieser Plattform bilde ich den vollständigen MLOps-Lebenszyklus für Kreditrisiko-Klassifikation ab – von Datengenerierung und Feature Engineering bis zu Serving, Monitoring und Challenger-Vergleichen.",
+      description: "Lokaler MLOps-Workflow für ein Klassifikationsszenario. Sie verbindet Training, Tracking, Batch-Inferenz und Monitoring, um Modelllebenszyklen praktisch abzubilden.",
       highlights: {
-        lifecycle: "MLflow-Experimente, Model Registry, Promotion und Flask-Serving über Airflow-DAGs verbunden.",
-        monitoring: "Klassifikationsmetriken, KS-basierte Feature-Drift und SHAP-Erklärungen in wiederholbare Workflows überführt.",
-        delivery: "Retraining, Qualitätsregeln und 5-fache Challenger-Vergleiche mit auditierbarer Entscheidungskette umgesetzt."
+        lifecycle: "Airflow-DAGs für Batch-Inferenz, Monitoring und Retraining mit MLflow-Tracking verknüpft.",
+        monitoring: "Klassifikationsmetriken, Feature-Drift und SHAP-Erklärungen als wiederholbare Auswertungen implementiert.",
+        delivery: "Challenger-Modelle per Cross-Validation verglichen und Promotion-Entscheidungen protokolliert."
       }
     },
     "fabric-agentic-analytics": {
-      description: "In diesem Projekt automatisiere ich die Bereitstellung einer Microsoft-Fabric-Plattform für Finanztransaktionen – mit Medallion-Pipeline, Semantic Model, Power BI und Data Agent.",
+      description: "Reproduzierbare Fabric-Analytics-Strecke für Finanztransaktionen. Schwerpunkt sind Infrastructure as Code, Medallion-Verarbeitung und die Bereitstellung von Analytics-Artefakten.",
       highlights: {
-        infrastructure: "Azure-Infrastruktur, Fabric-Artefakte und Bereitstellungsskripte über Terraform, Fabric CLI und fabric-cicd reproduzierbar gemacht.",
-        analytics: "Bronze-Silber-Gold-Pipeline, DirectQuery-Semantikmodell und Power-BI-Dashboard zu einer durchgängigen Analytics-Strecke verbunden.",
-        integration: "Data Agent, MCP-gestützte Chat-Schicht und ein eigenständig deploybares Eventhouse/KQL-Realtime-Modul ergänzt."
+        infrastructure: "Azure-Basisinfrastruktur und Fabric-Workspace mit Terraform bereitgestellt.",
+        analytics: "Medallion-Pipeline, semantisches Modell und Power-BI-Report reproduzierbar veröffentlicht.",
+        integration: "Lokale KI-Chat-Schicht und Realtime-Erweiterung als getrennte, optionale Module umgesetzt."
       }
     }
   },
   contact: {
     heading: "Kontakt",
-    intro: "Du möchtest dich zu Daten, MLOps oder KI-Systemen austauschen? Ich freue mich über eine Nachricht."
+    intro: "Wenn du dich austauschen oder einfach Kontakt aufnehmen möchtest, freue ich mich über eine Nachricht."
   }
 };

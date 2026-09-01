@@ -69,6 +69,10 @@ function renderProjects(app, locale) {
     .slice()
     .sort(function (left, right) { return left.order - right.order; })
     .map(function (project) {
+      if (project.tech.length > 5) {
+        throw new Error('Project "' + project.id + '" has more than five technology tags.');
+      }
+
       const highlights = project.highlights.map(function (highlight) {
         return "<li>" + escapeHtml(t("projects." + project.id + ".highlights." + highlight)) + "</li>";
       }).join("");

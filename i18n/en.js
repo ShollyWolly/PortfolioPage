@@ -20,17 +20,18 @@ APP.i18n.en = {
   hero: {
     role: "Data & AI Systems Engineer",
     location: "Saarland, Germany",
-    tagline: "I explore data and AI systems that can be operated, secured, and evolved with confidence.",
+    tagline: "I build data and AI systems with a focus on traceable data flows, clear access boundaries, and long-term evolution.",
     ctaProjects: "Explore projects",
     ctaContact: "Get in touch",
     ctaResume: "Download résumé"
   },
   about: {
     heading: "About",
-    intro: "I am interested in data platforms, MLOps, and AI systems, from data foundations and model lifecycles to controlled interfaces for LLMs. I am especially drawn to the decisions that connect architecture, operations, and governance.",
-    principleOne: "Design systems with operation and evolution in mind.",
-    principleTwo: "Treat governance, access control, and traceability as part of the design.",
-    principleThree: "Use cloud and open-source tools pragmatically.",
+    intro: "I build data and AI solutions at the intersection of architecture, operations, and governance. What matters to me is not only that a system works, but that its data flows, access model, and future evolution are understandable from the start.",
+    personal: "I learn new technologies best by building with them, in my own reference environments and through self-hosting. That lets me evaluate not only what a tool promises, but also how it integrates and where its boundaries lie. Swimming and hiking provide the balance away from the screen.",
+    principleOne: "Design data flows and operating paths so changes and failures remain visible.",
+    principleTwo: "Treat access and governance as architecture decisions.",
+    principleThree: "Use new technology where it improves a concrete requirement.",
     educationHeading: "Education",
     educationBachelor: "B.Sc. Business Informatics · Trier University of Applied Sciences",
     educationMaster: "M.Sc. Artificial Intelligence & Data Science · Trier University of Applied Sciences"
@@ -68,47 +69,47 @@ APP.i18n.en = {
   },
   projects: {
     heading: "Projects",
-    intro: "Personal projects give me space to think through data and AI systems hands-on, from architecture through to operation. They show how I connect complex components into understandable, operable systems.",
+    intro: "These projects show how I implement enterprise-oriented data and AI architectures from integration through to operations. The focus is on clear data flows, controlled access, repeatable delivery, and hands-on exploration of new technologies.",
     linkLabel: "Open repository",
     environments: {
       onprem: "Self-hosted",
       azure: "Azure"
     },
     "onprem-data-lakehouse": {
-      description: "In this project, I build a single-host lakehouse that carries generated retail data through Spark transformations and Iceberg tables to governed analytics.",
+      description: "Enterprise-oriented, self-hosted single-host lakehouse for generated retail data. It combines batch processing, open table formats, role-based data access, and analytics in a local environment.",
       highlights: {
-        identity: "Connected OpenLDAP and Ranger UserSync for identities, roles, and governed Trino access.",
-        orchestration: "Set up Airflow with schedulers, Celery workers, and Spark for orchestrated, quality-checked transformations.",
-        analytics: "Combined Trino, Cube, and Superset into governed query, semantic, and dashboard layers."
+        identity: "Modelled LDAP roles and Ranger policies for controlled Trino access.",
+        orchestration: "Orchestrated bronze, silver, and gold transformations with Airflow and Spark, including data-quality checks.",
+        analytics: "Provided curated data access through Trino, Cube, and Superset."
       }
     },
     "onprem-agentic-bi": {
-      description: "Here, I connect a Pagila warehouse, semantic layer, dashboards, and LibreChat agents into a local agentic BI demonstration for governed data access.",
+      description: "Local agentic BI environment for controlled queries on modelled data. It shows how chat agents access modelled data through a semantic layer and which identity and authorization steps this requires.",
       highlights: {
-        access: "Connected OpenLDAP as the directory source with Authentik for LibreChat OIDC and Cube MCP OAuth.",
-        governance: "Cube MCP verifies tokens and groups, mints short-lived Cube JWTs, and returns role-based masked PII.",
-        tools: "Integrated MCP services for governed semantic queries and dashboard inspection."
+        access: "Connected LDAP, Authentik OIDC/OAuth, and a dedicated Cube MCP gateway.",
+        governance: "Bound MCP queries to the signed-in identity and implemented role-based PII masking for this path.",
+        tools: "Kept agent queries and dashboard access intentionally separate; the dashboard uses a shared service identity."
       }
     },
     "onprem-mlops": {
-      description: "With this platform, I map the complete MLOps lifecycle for credit-risk classification, from data generation and feature engineering through to serving, monitoring, and challenger comparison.",
+      description: "Local MLOps workflow for a classification scenario. It combines training, tracking, batch inference, and monitoring to make model lifecycles tangible.",
       highlights: {
-        lifecycle: "Connected MLflow experiments, model registry, promotion, and Flask serving through Airflow DAGs.",
-        monitoring: "Turned classification metrics, KS-based feature drift, and SHAP explanations into repeatable workflows.",
-        delivery: "Implemented retraining, quality gates, and five-fold challenger comparisons with an auditable decision trail."
+        lifecycle: "Connected Airflow DAGs for batch inference, monitoring, and retraining with MLflow tracking.",
+        monitoring: "Implemented repeatable evaluations for classification metrics, feature drift, and SHAP explanations.",
+        delivery: "Compared challenger models through cross-validation and recorded promotion decisions."
       }
     },
     "fabric-agentic-analytics": {
-      description: "In this project, I automate the delivery of a Microsoft Fabric platform for financial transactions, with a medallion pipeline, semantic model, Power BI, and a Data Agent.",
+      description: "Reproducible Fabric analytics flow for financial transactions. It focuses on infrastructure as code, medallion processing, and the publication of analytics artefacts.",
       highlights: {
-        infrastructure: "Made Azure infrastructure, Fabric artefacts, and deployment scripts reproducible with Terraform, Fabric CLI, and fabric-cicd.",
-        analytics: "Connected a bronze–silver–gold pipeline, DirectQuery semantic model, and Power BI dashboard into one analytics path.",
-        integration: "Extended it with a Data Agent, MCP-backed chat layer, and independently deployable Eventhouse/KQL real-time module."
+        infrastructure: "Provisioned Azure base infrastructure and a Fabric workspace with Terraform.",
+        analytics: "Published a medallion pipeline, semantic model, and Power BI report reproducibly.",
+        integration: "Implemented the local AI chat layer and real-time extension as separate, optional modules."
       }
     }
   },
   contact: {
     heading: "Contact",
-    intro: "Would you like to exchange ideas about data, MLOps, or AI systems? I would be glad to hear from you."
+    intro: "If you would like to connect or simply get in touch, I would be glad to hear from you."
   }
 };

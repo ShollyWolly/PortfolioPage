@@ -8,9 +8,7 @@ APP.data.projects = [
     environment: "onprem",
     highlights: ["identity", "orchestration", "analytics"],
     tech: [
-      "Apache Airflow", "Apache Spark", "Apache Iceberg", "Apache Polaris",
-      "Garage", "PostgreSQL", "Redis", "OpenLDAP", "Apache Ranger", "Trino",
-      "Cube Core", "Apache Superset", "Streamlit", "Traefik", "Docker"
+      "Apache Spark", "Apache Iceberg", "Apache Airflow", "Trino", "Apache Ranger"
     ],
     order: 1
   },
@@ -21,8 +19,7 @@ APP.data.projects = [
     environment: "onprem",
     highlights: ["access", "governance", "tools"],
     tech: [
-      "LibreChat", "Azure AI Foundry", "OpenLDAP", "Authentik", "OIDC/OAuth",
-      "Cube Core", "Apache Superset", "PostgreSQL", "pgvector", "MCP", "Docker"
+      "LibreChat", "Authentik", "Cube", "Apache Superset", "Azure AI Foundry"
     ],
     order: 2
   },
@@ -33,8 +30,7 @@ APP.data.projects = [
     environment: "onprem",
     highlights: ["lifecycle", "monitoring", "delivery"],
     tech: [
-      "Apache Airflow", "MLflow", "PostgreSQL", "scikit-learn", "XGBoost",
-      "Flask", "Streamlit", "JupyterLab", "Evidently", "SHAP", "Docker"
+      "Apache Airflow", "MLflow", "PostgreSQL", "SHAP", "scikit-learn"
     ],
     order: 3
   },
@@ -45,9 +41,7 @@ APP.data.projects = [
     environment: "azure",
     highlights: ["infrastructure", "analytics", "integration"],
     tech: [
-      "Microsoft Fabric", "Terraform", "Azure ADLS Gen2", "Fabric CLI", "fabric-cicd",
-      "Power BI", "Data Agent", "Eventhouse", "KQL", "Azure Container Instances",
-      "Open WebUI", "Open Terminal", "MCP", "Docker"
+      "Microsoft Fabric", "Terraform", "fabric-cicd", "Power BI", "Open WebUI"
     ],
     order: 4
   }
