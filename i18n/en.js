@@ -28,7 +28,7 @@ APP.i18n.en = {
   about: {
     heading: "About",
     intro: "I build data and AI solutions at the intersection of architecture, operations, and governance. What matters to me is not only that a system works, but that its data flows, access model, and future evolution are understandable from the start.",
-    personal: "I learn new technologies best by building with them, in my own reference environments and through self-hosting. That lets me evaluate not only what a tool promises, but also how it integrates and where its boundaries lie. Swimming and hiking provide the balance away from the screen.",
+    personal: "I learn new technologies best by building with them, in my own projects and through self-hosting. That lets me evaluate not only what a tool promises, but also how it integrates and where its boundaries lie. Swimming and hiking provide the balance away from the screen.",
     principleOne: "Design data flows and operating paths so changes and failures remain visible.",
     principleTwo: "Treat access and governance as architecture decisions.",
     principleThree: "Use new technology where it improves a concrete requirement.",

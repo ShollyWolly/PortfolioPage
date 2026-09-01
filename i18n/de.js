@@ -28,7 +28,7 @@ APP.i18n.de = {
   about: {
     heading: "Über mich",
     intro: "Ich entwickle Daten- und KI-Lösungen an der Schnittstelle von Architektur, Betrieb und Governance. Entscheidend ist für mich nicht nur, dass ein System funktioniert, sondern dass Datenflüsse, Zugriffe und Weiterentwicklung von Anfang an nachvollziehbar sind.",
-    personal: "Neue Technologien erschließe ich praktisch, in eigenen Referenzumgebungen und beim Self-Hosting. So prüfe ich nicht nur, was ein Werkzeug verspricht, sondern auch, wie es sich integriert und wo seine Grenzen liegen. Beim Schwimmen und Wandern finde ich den Ausgleich dazu.",
+    personal: "Neue Technologien erschließe ich praktisch, in eigenen Projekten und beim Self-Hosting. So prüfe ich nicht nur, was ein Werkzeug verspricht, sondern auch, wie es sich integriert und wo seine Grenzen liegen. Beim Schwimmen und Wandern finde ich den Ausgleich dazu.",
     principleOne: "Datenflüsse und Betriebswege so gestalten, dass Änderungen und Fehler sichtbar bleiben.",
     principleTwo: "Zugriffe und Governance als Architekturentscheidungen behandeln.",
     principleThree: "Neue Technologien dort einsetzen, wo sie eine konkrete Anforderung besser lösen.",
