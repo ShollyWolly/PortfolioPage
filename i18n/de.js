@@ -76,7 +76,7 @@ APP.i18n.de = {
       azure: "Azure"
     },
     "onprem-data-lakehouse": {
-      description: "Enterprise-orientiertes, selbst gehostetes Single-Host-Lakehouse für generierte Retaildaten. Sie verbindet Batch-Verarbeitung, offene Tabellenformate, rollenbasierte Datenzugriffe und Analytics in einer lokalen Umgebung.",
+      description: "Enterprise-orientiertes, selbst gehostetes Single-Host-Lakehouse für Retaildaten. Sie verbindet Batch-Verarbeitung, offene Tabellenformate, rollenbasierte Datenzugriffe und Analytics in einer lokalen Umgebung.",
       highlights: {
         identity: "LDAP-Rollen und Ranger-Policies für kontrollierten Trino-Zugriff modelliert.",
         orchestration: "Bronze-, Silver- und Gold-Transformationen mit Airflow und Spark orchestriert, inklusive Data-Quality-Checks.",

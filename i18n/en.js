@@ -76,7 +76,7 @@ APP.i18n.en = {
       azure: "Azure"
     },
     "onprem-data-lakehouse": {
-      description: "Enterprise-oriented, self-hosted single-host lakehouse for generated retail data. It combines batch processing, open table formats, role-based data access, and analytics in a local environment.",
+      description: "Enterprise-oriented, self-hosted single-host lakehouse for retail data. It combines batch processing, open table formats, role-based data access, and analytics in a local environment.",
       highlights: {
         identity: "Modelled LDAP roles and Ranger policies for controlled Trino access.",
         orchestration: "Orchestrated bronze, silver, and gold transformations with Airflow and Spark, including data-quality checks.",
